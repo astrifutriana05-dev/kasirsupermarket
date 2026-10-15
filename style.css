@@ -1,0 +1,37 @@
+:root{--biru:#12457a;--garis:#c9d0d8;--abu:#6b7683;--latar:#e6e9ed}
+body{background:var(--latar);color:#1b232d;font-family:"Segoe UI",Roboto,Arial,sans-serif;font-size:14px;font-variant-numeric:tabular-nums}
+
+.topbar{background:var(--biru);color:#fff;display:flex;flex-wrap:wrap;align-items:center;gap:8px 28px;padding:8px 16px;position:sticky;top:0;z-index:50}
+.brand{font-weight:700;font-size:1.05rem;line-height:1.2}
+.brand span{display:block;font-weight:400;font-size:.75rem;opacity:.75}
+#tabs{gap:4px}
+#tabs .nav-link{color:#cfe0f3;border-radius:3px;padding:6px 14px}
+#tabs .nav-link:hover{background:rgba(255,255,255,.12)}
+#tabs .nav-link.active{background:#fff;color:var(--biru);font-weight:600}
+.info-kasir{margin-left:auto;text-align:right;font-size:.8rem;line-height:1.35}
+
+.panel{background:#fff;border:1px solid var(--garis);border-radius:4px}
+.tabel-nota{height:calc(100vh - 175px);overflow-y:auto}
+.table thead th{background:#eef1f4;font-weight:600;font-size:.8rem;border-bottom:1px solid var(--garis);position:sticky;top:0;z-index:1}
+.table>tbody>tr>td{vertical-align:middle}
+tr.baru>td{animation:sorot 1.2s ease-out}
+@keyframes sorot{from{background-color:#fff1a8}to{background-color:transparent}}
+.qty-btn{width:26px;height:26px;padding:0;line-height:1;font-weight:700}
+.kosong{text-align:center;color:var(--abu);padding:36px 0!important}
+
+.total-box{background:#f4f8fd;border:2px solid var(--biru);border-radius:4px;padding:10px 14px;margin-bottom:12px}
+.total-label{font-size:.75rem;font-weight:600;color:var(--abu)}
+.total-angka{font-size:2.3rem;font-weight:700;text-align:right;line-height:1.15;color:#0b1f36}
+.rincian div{display:flex;justify-content:space-between;padding:2px 0}
+.kembali{display:flex;justify-content:space-between;font-weight:700;font-size:1.15rem;margin-bottom:10px}
+#btnBayar{font-weight:700;letter-spacing:.3px}
+
+.btn-primary{--bs-btn-bg:var(--biru);--bs-btn-border-color:var(--biru);--bs-btn-hover-bg:#0d3560;--bs-btn-hover-border-color:#0d3560;--bs-btn-active-bg:#0d3560}
+.btn,.form-control,.form-select,.modal-content,.input-group-text{border-radius:3px}
+.input-group-text{background:#eef1f4;font-weight:600}
+.table-responsive{background:#fff;border:1px solid var(--garis);border-radius:4px}
+#struk{font-family:"Courier New",monospace;font-size:13px}
+#mStruk .modal-body{background:#fffdf7}
+
+@media (max-width:991.98px){.tabel-nota{height:auto;max-height:50vh}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
